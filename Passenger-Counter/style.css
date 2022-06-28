@@ -15,10 +15,20 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.container {
+    width: 50vw;
+    height: 38vh;
+    position: relative;
+    left: 16vw;
+    top: 25%;
+    padding: 40px;
+    /* border: 2px solid red; */
+}
 .headingH1 {
     position: absolute;
     left: 50%;
-    top: 23%;
+    top: 15%;
     transform: translate(-50%, -50%);
     padding: -100px;
     font-family: 'Poppins', sans-serif;
@@ -33,7 +43,7 @@ body {
 .headingH2 {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translate(-50%, -50%);
     padding: 10px;
     font-family: 'Poppins', sans-serif;
@@ -44,36 +54,33 @@ body {
 }
 
 button {
-    position: absolute;
-    left: 50%;
-    top: 77%;
-    transform: translate(-50%, -50%);
-}
-
-#increament-btn {
-    border-radius: 8px;
-    width: 21vw;
+    border-radius: 6px;
+    font-family: 'Poppins', sans-serif;
     height: 7vh;
-    font-size: 1.5rem;
     min-width: 150px;
     min-height: 50px;
-    font-family: 'Poppins', sans-serif;
+    width: 16vw;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#increament-btn {
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: darkred;
+}
+
+#save {
+    position: absolute;
+    left: 35.5%;
+    top: 67%;
+    background-color: rgb(7, 188, 7);
 }
 
 button:hover {
     cursor: pointer;
-    background-color: #333;
-    color: #ffff00;
-}
-
-.container {
-    width: 50vw;
-    height: 28vh;
-    position: absolute;
-    left: 16vw;
-    top: 25%;
-    padding: 40px;
-    /* border: 2px solid red; */
+    color: cyan;
 }
 
 @media screen and (max-width: 1000px) {
@@ -86,13 +93,32 @@ button:hover {
 }
 
 @media screen and (max-width: 712px) and (min-width: 580px) {
-    #increament-btn {
+    button {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width: 579px) {
-    #increament-btn {
+    button {
         font-size: 18px;
     }
+}
+
+hr {
+    position: relative;
+    top: 110%;
+    border: 2px solid black;
+    background-color: black;
+}
+
+.para {
+    position: absolute;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    margin: auto;
+    left: 27%;
+    top: 80%;
+    font-family: 'Poppins', sans-serif;
+    visibility: hidden;
 }
