@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
 body {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100vw;
+    min-height: 600px;
 }
 
 .bg {
@@ -16,10 +18,12 @@ body {
 .headingH1 {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 23%;
     transform: translate(-50%, -50%);
-    padding: 10px;
-    /* border: 2px solid black; */
+    padding: -100px;
+    font-family: 'Poppins', sans-serif;
+    /* border: 1px solid yellow; */
+    min-width: 242px;
 }
 
 .headingH1 h1 {
@@ -29,10 +33,10 @@ body {
 .headingH2 {
     position: absolute;
     left: 50%;
-    top: 40%;
+    top: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-    /* border: 2px solid black; */
+    font-family: 'Poppins', sans-serif;
 }
 
 .headingH2 h2 {
@@ -42,9 +46,8 @@ body {
 button {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 77%;
     transform: translate(-50%, -50%);
-    padding: 10px;
 }
 
 #increament-btn {
@@ -53,12 +56,24 @@ button {
     height: 7vh;
     font-size: 1.5rem;
     min-width: 150px;
+    min-height: 50px;
+    font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
     cursor: pointer;
     background-color: #333;
     color: #ffff00;
+}
+
+.container {
+    width: 50vw;
+    height: 28vh;
+    position: absolute;
+    left: 16vw;
+    top: 25%;
+    padding: 40px;
+    /* border: 2px solid red; */
 }
 
 @media screen and (max-width: 1000px) {
