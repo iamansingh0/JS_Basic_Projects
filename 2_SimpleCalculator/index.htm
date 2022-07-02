@@ -13,31 +13,35 @@
 <body>
     <div class="calc">
         <div class="header">
-            <div class="header-screen">
-
-            </div>
+            <input type="text" class="header-screen" value="0" disabled/>
         </div>
         <div class="keypad">
-            <div class="cbtn">
-                C
-            </div>
-            <div id="grid">
-                <button class="grid-item">1</button>
-                <button class="grid-item">2</button>
-                <button class="grid-item">3</button>
-                <button class="grid-item">4</button>
-                <button class="grid-item">5</button>
-                <button class="grid-item">6</button>
-                <button class="grid-item">7</button>
-                <button class="grid-item">8</button>
-                <button class="grid-item">9</button>
-                <button class="grid-item">10</button>
-                <button class="grid-item">11</button>
-                <button class="grid-item">12</button>
-                <button class="grid-item">13</button>
-                <button class="grid-item">14</button>
-                <button class="grid-item">15</button>
-                <button class="grid-item">16</button>
+            <button type="button" class="all-clear function cbtn color-red" value="all-clear">AC</button>
+
+            <div id="grid" class="calculator-keys">
+                <button type="button" value="7" class="grid-item">7</button>
+                <button type="button" value="8" class="grid-item">8</button>
+                <button type="button" value="9" class="grid-item">9</button>
+
+                <button type="button" class="color-orange grid-item special" value="x">&times;</button>
+
+                <button type="button" value="4" class="grid-item">4</button>
+                <button type="button" value="5" class="grid-item">5</button>
+                <button type="button" value="6" class="grid-item">6</button>
+
+                <button type="button" class="color-orange grid-item special" value="÷">&divide;</button>
+
+                <button type="button" value="1" class="grid-item">1</button>
+                <button type="button" value="2" class="grid-item">2</button>
+                <button type="button" value="3" class="grid-item">3</button>
+
+                <button type="button" class="color-orange grid-item special" value="-">-</button>
+
+                <button type="button" value="0" class="grid-item">0</button>
+
+                <button type="button" class="decimal function grid-item color-blue dotbtn" value=".">.</button>
+                <button type="button" class="equal-sign operator color-orange grid-item special" value="=">=</button>
+                <button type="button" class="color-orange grid-item special" value="+">+</button>
             </div>
         </div>
     </div>
