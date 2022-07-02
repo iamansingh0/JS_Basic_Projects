@@ -29,7 +29,7 @@
 }
 .header-screen {
   width: 350px;
-  height: 62px;
+  height: 56px;
   border-radius: 10px;
   background-color: bisque;
   display: flex;
@@ -39,9 +39,42 @@
   color: black;
 }
 .keypad {
-  height: 300px;
+  height: 325px;
   background-color: #414143;
   width: 387px;
   margin: auto;
   margin-top: 80px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#grid {
+  display: grid;
+  padding: 13px;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  grid-template-columns: 75px 75px 75px 75px;
+  position: relative;
+  top: 15px;
+}
+
+.cbtn {
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  padding: 13px;
+  display: inline-block;
+  width: 110px;
+  position: relative;
+  top: 14px;
+  left: 14px;
+}
+
+.grid-item {
+  background-color: white;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
 }
